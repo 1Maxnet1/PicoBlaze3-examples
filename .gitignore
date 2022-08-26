@@ -2,3 +2,9 @@
 .kdev4/
 
 *.kdev4
+
+*.fmt
+
+*.log
+
+*.mem

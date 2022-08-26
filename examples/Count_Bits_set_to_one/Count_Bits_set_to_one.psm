@@ -1,0 +1,15 @@
+Namereg s0, input
+Namereg s5, counter
+Namereg sF, result
+
+load result, 00
+load counter, 00                ; Initialize counter
+
+while_loop:
+compare     counter, 8'd
+jump        NC, while_end      ;End loop when counter >= 8
+sr0         input
+addcy       result, 00
+add         counter, 01
+jump        while_loop
+while_end:
